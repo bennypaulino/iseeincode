@@ -27,6 +27,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+#Installing this gem enables two great things. First off, assets are served in production in a more efficient 
+#style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 
+#provide useful information in troubleshooting rather than the generic error messages that are usually displayed.
+gem 'rails_12factor', group: :production
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
