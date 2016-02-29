@@ -19,6 +19,8 @@
      - A place to blog, share examples of previous work, and have a contact page or pop up modal.
 
   2. Features
+      - Blog
+
       - Blog posts
           - Create / Edit / Destroy
           - Markdown
@@ -36,11 +38,11 @@
 
   3.  Modeling the Data
 
-      - Blog posts
+      - Post
           title:string
           content:string
 
-      - Projects
+      - Project
           title:string
           description:text
           link:string
@@ -50,7 +52,7 @@
 ## Think through the pages that are needed in the app
 
     - Home
-    - blogposts#index
+    - blog#index
     - blogposts#show
     - projects#index
     - projects#show
