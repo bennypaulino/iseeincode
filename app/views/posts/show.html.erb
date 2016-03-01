@@ -19,13 +19,21 @@
 
   <div id="share_box">
     <p>Share<p>
-    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a onclick="window.open('http://twitter.com/share?text=<%= @post.title %> by @i_see_in_code- &amp;url=<%= %>','_blank','width=800,height=500,top=200,left=300');void(0);" ><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-facebook"></i></a>
     <a href="#"><i class="fa fa-reddit"></i></a>
     <a href="#"><i class="fa fa-google-plus"></i></a>
   </div>
 
+  <!-- 
+  There is a ruby code snippet that has been cut out (lines 22 after the &amp;url=). Putting it in place results in a NoMethodError undefined mehtod `model_name' for Hash:Class
+  paste in the following:
+  url_for([@post, {only_path: false}])
+ -->
+
   <hr>
+
+<%= render 'disqus' %>
 
 </div>
 
