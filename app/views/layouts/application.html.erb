@@ -18,7 +18,8 @@
 <body>
   <header role="banner" id="mainHeader">
     <h1 id="mainLogo">
-      <a href="index.html" title="&gt i see in code &UnderBar;">&gt;<span>I see in code</span><em>_</em></a>
+      <!-- <%= link_to "How do I drop in the logo and NOT break the styling?", root_path %> -->
+      <a href="www.iseeincode.com" title="&gt i see in code &UnderBar;">&gt;<span>I see in code</span><em>_</em></a>
     </h1>
     <nav role="navigation" id="mainNav">
       <%= link_to 'Blog', posts_path %>
@@ -27,7 +28,22 @@
       <a href="contact/contact.html" title="contact" id="contactLink">Contact</a>
     </nav>
   </header>
+
+  <!-- if you want to add the functionality to cycle through blog post titles, check out the video at
+  https://www.youtube.com/watch?v=fY2SuLqMD_w&index=14&list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq -->
+
+
 <%= yield %>
+
+  <footer role="contentinfo" id="pageFooter">
+    <p class="copyright">&copy; 2016 <%= link_to "iseeincode.com", root_path %>
+    <nav id="footerNav">
+        <a href="https://www.instagram.com/iseeincode/" title="Follow me on Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/i_see_in_code" title="Follow me on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/bennypaulino" title="GitHub" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </nav>
+    </p>
+  </footer>
 
 </body>
 </html>
