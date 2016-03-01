@@ -36,6 +36,10 @@ gem 'pygments.rb', '~> 0.6.0'
 # exposes the pygments syntax highlighter to Ruby
 gem 'redcarpet', '~>3.2.2'
 
+# friendly_id is the Swiss Army Bulldozer of slugging and permalink plugins for Active Record. Lets you create pretty URLs
+# and work with human-friendly strings as if they were numeric ids.
+gem 'friendly_id', '~> 5.1.0'
+
 #Installing this gem enables two great things. First off, assets are served in production in a more efficient 
 #style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 
 #provide useful information in troubleshooting rather than the generic error messages that are usually displayed.

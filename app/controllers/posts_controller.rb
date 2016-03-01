@@ -40,11 +40,12 @@ end
 private
 
   def post_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :content, :slug)
   end
 
+# changing the find_post method to this:  @post = Post.friendly.find(params[:id])  WILL BREAK the page
   def find_post
     @post = Post.find(params[:id])
   end
-
+  
 end
