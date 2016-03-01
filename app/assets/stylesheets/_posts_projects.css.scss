@@ -1,0 +1,195 @@
+/* -- GLOBAL -- */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Browser penetration for Nov.2015  Chrome-67.4%  IE-6.8% Firefox-19.2% Safari-3.9% Opera-1.5% */
+html {
+}
+
+/* -- layout -- */
+
+
+#mainContent{
+    margin-top: 5%;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+p, ul, ol {
+  margin: 0 0 1.6em 0;
+}
+
+#posts_wrapper {
+  padding: 3em 0;
+}
+
+.post {
+  text-align: center;
+}
+.date {
+  text-align: center;
+  font-size: .9em;
+  margin: 0;
+  color: #ececec;
+  padding-bottom: .4em;
+}
+.post h2 {
+  margin: 0;
+  font-size: 2em;
+}
+.post a {
+  text-decoration: none;
+}
+.post a:hover {
+  color: red;
+  transition: 1s;
+}
+.post hr {
+  width: 20%;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #AD2929;
+  margin: 2rem auto;
+}
+
+//---------------Blog Posts
+
+.post_show_content header {
+  text-align: center;
+}
+
+.post_show_content h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.post_show_content hr {
+  margin: 2em auto;
+  width: 20%;
+}
+
+#content h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+#content p {
+  font-size: 1em;
+}
+
+#share_box {
+  text-align: center
+}
+#share_box p {
+  padding: 0 0 1em 0;
+  margin: 0;
+  font-weight: 700;
+  color: #C0C0C0; 
+  font-size: .8em;
+  letter-spacing: 1em;
+}
+#share_box i {
+  color: #424652;
+  padding: 1em 1.5em;
+  letter-spacing: -.2em;
+}
+
+#share_box i:hover {
+  color: #86c6ab;
+  cursor: pointer;
+}
+
+
+
+// ----------------pagination
+
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: block;
+}
+
+.pagination:after {
+  clear: both;
+}
+
+.pagination {
+  text-align: center;
+  margin: 0 0 3em 0;
+}
+.pagination a, .previous_page, .current, .next_page {
+  padding: .75em 1em;
+  margin: 0 .5em;
+  border-radius: .15em;
+  line-height: 20px;
+  text-decoration: none;
+  background: #fff;
+  font-size: .7em;
+  font-weight: 700;
+  font-style: normal;
+  color: #A4A4A4;
+}
+.current {
+  background: #A4A4A4;
+  color: #fff;
+}
+.disabled {
+  color: #C0C0C0;
+  &:hover {
+    color: #C0C0C0;
+    background: #fff;
+  }
+} 
+.pagination a:hover {
+  background: #EEE;
+  color: #fff;
+}
+
+.pagination a:hover {
+  color: red;
+  transition: 1s;
+}
+
+

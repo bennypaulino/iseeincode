@@ -1,0 +1,163 @@
+@import 'normalize';
+
+body {
+  font-family: "Trebuchet MS", Palatino, serif;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2.5% 0 0;
+  width: 100%;
+}
+
+#mainHeader {
+  margin: auto 2em 1em;
+}
+
+.clear {clear: both
+}
+
+#mainLogo a {
+  color: red;
+  text-decoration: none;
+  float: left;
+  font-size: 2em;
+  letter-spacing: .25em;
+}
+#mainLogo>a>span {
+  color: black;
+}
+#mainLogo a:hover,
+#mainLogo a:hover span {
+    color: #009900;
+    transition: .75s;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    65% {opacity: 1;}
+    70% {opacity: 0;}
+    99% {opacity: 0}
+    100% {opacity: 1;}
+}
+#mainLogo a:hover em {
+  animation-name: blink;
+  animation-duration: 1.35s;
+  animation-iteration-count: infinite;
+}
+#mainNav {
+    float: right;
+    font-size: 1.05rem;
+    text-align: right;
+    letter-spacing: .25em;
+    word-spacing: .1em;
+    margin-top: 1em;
+}
+#mainNav a {
+    color: black;
+    text-decoration: none;
+    padding: 1em .5em 1em;
+}
+#mainNav a:hover {
+    color: red;
+    transition: 1s;
+}
+
+
+#headerBottomBorder {
+  width: 3em auto;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #ececec;
+  margin: 4rem 0 2rem 0;
+  padding-top: 1rem;
+}
+
+#pageTitle {
+  text-align: center;
+  padding: 1em 0 .2em 0;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 500;
+}
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 4rem 0;
+}
+
+
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 1.5em;
+  border: 2px solid #C0C0C0;
+  padding: 1em;
+  margin: .5em 0 2em 0;
+}
+
+textarea {
+  min-height: 20em
+}
+
+input[type="submit"], .button {
+  outline: none;
+  background: transparent;
+  border: 2px solid #C0C0C0;
+  text-align: center;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+input[type="submit"], .button:hover {
+  border: 2px solid #BCE4E2;
+}
+
+
+
+// ---------- Footer
+
+#pageFooter{
+  margin: .6em 2em 1em;
+}
+#pageFooter a {
+  text-decoration: none;
+}
+
+.copyright a {
+  color: black;
+}
+.copyright a:hover {
+  color: red;
+  transition: .75s;
+}
+
+#footerNav{
+  float: right;
+  word-spacing: .75em;
+  font-size: 1.1em;
+  margin-top: -1em;
+}
+
+#footerNav i:hover {
+  color: red;
+  transition: .75s;
+  cursor: pointer;
+}
+
+#footerNav i {
+  color: #C0C0C0
+}
+  
+
+@import 'welcome';
+@import 'posts_projects';
+@import "font-awesome-sprockets";
+@import "font-awesome";

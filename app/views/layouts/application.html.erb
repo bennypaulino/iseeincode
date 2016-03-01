@@ -3,12 +3,30 @@
 <head>
   <title>Iseeincode</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>I See In Code | Contact</title>
+  <meta name="description" content="I See In Code Blog/Portfolio"/>
+  <meta name="keywords" content="Ruby, Rails, Blog, Projects, portfolio, application"/>
+  <meta name="robots" content="contact, follow"/>
+  <link rel="stylesheet" href="../../assets/css/reset.css"/>
+  <link rel="stylesheet" href="/assets/font-awesome-4.5.0/css/font-awesome.min.css"/>
+  <link rel="icon" href="../../assets/images/terminal_icon_v-1.ico"/>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header role="banner" id="mainHeader">
+    <h1 id="mainLogo">
+      <a href="index.html" title="&gt i see in code &UnderBar;">&gt;<span>I see in code</span><em>_</em></a>
+    </h1>
+    <nav role="navigation" id="mainNav">
+      <%= link_to 'Blog', posts_path %>
 
+      <a href="projects/projects.html" title="projects" id="projectsLink">Projects</a>
+      <a href="contact/contact.html" title="contact" id="contactLink">Contact</a>
+    </nav>
+  </header>
 <%= yield %>
 
 </body>
