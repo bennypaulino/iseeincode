@@ -30,6 +30,12 @@ gem 'jbuilder', '~> 1.2'
 # Sass-powered version of FontAwesome for your Ruby projects and plays nicely with Ruby on Rails, Compass, Sprockets, etc.
 gem 'font-awesome-sass'
 
+# Markdown parsing
+gem 'pygments.rb', '~> 0.6.0'
+
+# exposes the pygments syntax highlighter to Ruby
+gem 'redcarpet', '~>3.2.2'
+
 #Installing this gem enables two great things. First off, assets are served in production in a more efficient 
 #style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 
 #provide useful information in troubleshooting rather than the generic error messages that are usually displayed.
