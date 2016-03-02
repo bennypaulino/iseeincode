@@ -44,6 +44,9 @@ gem 'friendly_id', '~> 5.1.0'
 # pagination links in Rails, Sinatra, and Merb web apps.
 gem 'will_paginate', '~> 3.0.7'
 
+# this will help with the Contact page
+gem 'mail_form', '~> 1.5.1'
+
 # User authentication for Rails with Warden
 gem 'devise', '~> 3.4.1'
 
