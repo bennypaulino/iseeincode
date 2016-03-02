@@ -75,7 +75,6 @@ body {
   text-align: center;
   padding: 1em 0 .2em 0;
   font-size: 1em;
-  text-transform: uppercase;
   letter-spacing: .2em;
   font-weight: 500;
 }
@@ -90,7 +89,54 @@ body {
   padding: 4rem 0;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
 
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+p, ul, ol {
+  margin: 0 0 1.6em 0;
+}
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;

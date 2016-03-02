@@ -20,45 +20,6 @@ html {
   margin: 0 auto;
 }
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-p, li {
-  font-size: 1.1rem;
-  line-height: 1.75;
-}
-
-p, ul, ol {
-  margin: 0 0 1.6em 0;
-}
-
 #posts_wrapper {
   padding: 3em 0;
 }
@@ -141,6 +102,27 @@ p, ul, ol {
   cursor: pointer;
 }
 
+#admin_links {
+  border-top: 1px solid #b30000;
+  border-bottom: 1px solid #b30000;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0;
+}
+
+#admin_links a {
+  color: #f2b87f;
+  margin: 0 1em;
+  font-weight: 700;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#admin_links a:hover {
+  color: #e67200;
+  transition: 1s;
+}
 
 
 // ----------------pagination
