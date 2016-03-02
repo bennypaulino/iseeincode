@@ -35,6 +35,11 @@
   https://www.youtube.com/watch?v=6emeXp9z5kQ&index=20&list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq
 
 -->
+<% if notice %>
+  <p class="notice"><%= notice %></p>
+<% elsif alert %>
+  <p class="alert"><%= alert %></p>
+<% end %>
 
 
 <%= yield %>

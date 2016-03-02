@@ -44,6 +44,9 @@ gem 'friendly_id', '~> 5.1.0'
 # pagination links in Rails, Sinatra, and Merb web apps.
 gem 'will_paginate', '~> 3.0.7'
 
+# User authentication for Rails with Warden
+gem 'devise', '~> 3.4.1'
+
 #Installing this gem enables two great things. First off, assets are served in production in a more efficient 
 #style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 
 #provide useful information in troubleshooting rather than the generic error messages that are usually displayed.
