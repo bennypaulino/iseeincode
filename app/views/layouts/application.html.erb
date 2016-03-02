@@ -23,14 +23,18 @@
     </h1>
     <nav role="navigation" id="mainNav">
       <%= link_to 'Blog', posts_path %>
-
-      <a href="projects/projects.html" title="projects" id="projectsLink">Projects</a>
+      <%= link_to 'Projects', projects_path %>
+     
       <a href="contact/contact.html" title="contact" id="contactLink">Contact</a>
     </nav>
   </header>
 
   <!-- if you want to add the functionality to cycle through blog post titles, check out the video at
-  https://www.youtube.com/watch?v=fY2SuLqMD_w&index=14&list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq -->
+  https://www.youtube.com/watch?v=fY2SuLqMD_w&index=14&list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq 
+  and also the following video at 12:30 minutes in...
+  https://www.youtube.com/watch?v=6emeXp9z5kQ&index=20&list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq
+
+-->
 
 
 <%= yield %>

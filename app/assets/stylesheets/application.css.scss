@@ -118,9 +118,25 @@ input[type="submit"], .button {
 
 input[type="submit"], .button:hover {
   border: 2px solid #BCE4E2;
+  color: #86c6ab;
 }
 
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center;
+}
 
+.project_button {
+  background: #66c166;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+.project_button:hover {
+  background: #4cb74c;
+  transition: .75s;
+}
 
 // ---------- Footer
 
