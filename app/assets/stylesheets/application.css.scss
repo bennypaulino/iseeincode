@@ -19,7 +19,6 @@ body {
   color: red;
   text-decoration: none;
   float: left;
-  font-size: 2em;
   letter-spacing: .25em;
 }
 #mainLogo>a>span {
@@ -198,12 +197,14 @@ input[type="submit"], .button:hover {
 #pageFooter{
   margin: .6em 2em 1em;
 }
+
 #pageFooter a {
   text-decoration: none;
 }
 
 .copyright a {
   color: black;
+  font-size: .8em;
 }
 .copyright a:hover {
   color: red;
@@ -214,7 +215,7 @@ input[type="submit"], .button:hover {
   float: right;
   word-spacing: .75em;
   font-size: 1.1em;
-  margin-top: -1em;
+  margin-top: -2em;
 }
 
 #footerNav i:hover {
