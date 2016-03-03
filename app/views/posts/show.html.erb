@@ -29,10 +29,16 @@
     <a onclick="window.open('http://facebook.com/sharer.php?u=<%= post_url %>&description=<%= @post.title %> ',' _blank','width=800,height=500,top=200,left=300');void(0);" ><i class="fa fa-facebook"></i></a>
 
 
-    <!-- Reddit
+    <!-- Reddit -->
+    <a onclick="window.open = '//www.reddit.com/submit?url=<%= post_url %>' + encodeURIComponent(window.location); return false"><i class="fa fa-reddit"></i></a>
+      <!-- 
     <a href="http://www.reddit.com/submit?url=<URL>&title=<TITLE>"><i class="fa fa-reddit"></i></a>
 
     <a href="http://www.reddit.com/submit?url=&title=" target="_blank" title="Submit to Reddit">
+
+    <a onclick="window.open = '//www.reddit.com/submit?url=<%= post_url %>' + encodeURIComponent(window.location); return false">
+    onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false">
+
     -->
   
     <!-- Google+ -->

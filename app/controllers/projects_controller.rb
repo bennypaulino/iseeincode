@@ -43,11 +43,11 @@ class ProjectsController < ApplicationController
   private
 
   def find_project
-    @project = Project.find(params[:id]) #change this to .friendly.find(params etc...
+    @project = Project.friendly.find(params[:id]) #change this to .friendly.find(params etc...
   end
 
   def project_params
-    params.require(:project).permit(:title, :description, :link) #add ,:slug (to make friendly work)
+    params.require(:project).permit(:title, :description, :link,:slug) #add ,:slug (to make friendly work)
   end
 
 
