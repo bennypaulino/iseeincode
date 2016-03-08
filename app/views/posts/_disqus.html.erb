@@ -4,7 +4,7 @@
   var disqus_shortname = 'iseeincode';
   var disqus_identifier = '<%= @post.id %>';
   var disqus_title = '<%= @post.title %>';
-  var disqus_url  '<%=  %>';
+  var disqus_url = '<%=request.original_url -%>';
 
 // This line for the blank ruby code doesn't work! --->  url_for([@post, {only_path: false}])
 

@@ -18,8 +18,14 @@
 <body>
   <header role="banner" id="mainHeader">
     <h1 id="mainLogo">
+
       <!-- <%= link_to "How do I drop in the logo and NOT break the styling?", root_path %> -->
-      <a href="welcome/index" title="&gt i see in code &UnderBar;">&gt;<span>I see in code</span><em>_</em></a>
+      <a href="welcome/index" title="&gt i see in code &UnderBar;">&gt;<span>I see in code</span><em>_</em></a> 
+      <!--
+      <%= link_to root_path do %>
+        <p>&gt;<span>I see in code</span><em>_</em></p>
+      <% end %>
+      -->
     </h1>
     <nav role="navigation" id="mainNav">
       <%= link_to 'Blog', posts_path %>
@@ -31,12 +37,16 @@
     </nav>
   </header>
 
+  <!-- <hr id="headerBottomBorder" class="clear"> 
+  You might need this in order to avoid the mess at the top from an alert -->
+
   <!-- if you want to add the functionality to cycle through blog post titles, check out the video at
   https://www.youtube.com/watch?v=fY2SuLqMD_w&index=14&list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq 
   and also the following video at 12:30 minutes in...
   https://www.youtube.com/watch?v=6emeXp9z5kQ&index=20&list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq
+  -->
 
--->
+<!-- the following is a notice/alert for user authentication -->
 <% if notice %>
   <p class="notice"><%= notice %></p>
 <% elsif alert %>
