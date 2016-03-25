@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -49,6 +49,13 @@ gem 'mail_form', '~> 1.5.1'
 
 # User authentication for Rails with Warden
 gem 'devise', '~> 3.4.1'
+
+# A Sass-powered version of Bootstrap 3
+gem 'bootstrap-sass', '~> 3.3.5.1'
+
+# Declarative dependency management for JavaScript and CSS assets, as well as a powerful preprocessor 
+# pipeline that allows you to write assets in languages like CoffeeScript, Sass and SCSS.
+gem 'sprockets', '2.11.0'
 
 #Installing this gem enables two great things. First off, assets are served in production in a more efficient 
 #style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 
