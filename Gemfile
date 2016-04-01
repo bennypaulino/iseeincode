@@ -30,10 +30,10 @@ gem 'jbuilder', '~> 1.2'
 # Sass-powered version of FontAwesome for your Ruby projects and plays nicely with Ruby on Rails, Compass, Sprockets, etc.
 gem 'font-awesome-sass'
 
-# Markdown parsing
+# exposes the pygments syntax highlighter to Ruby
 gem 'pygments.rb', '~> 0.6.0'
 
-# exposes the pygments syntax highlighter to Ruby
+# Markdown parsing, allows you to show Markdown as formatted HTML in your Ruby / Rails app
 gem 'redcarpet', '~>3.2.2'
 
 # friendly_id is the Swiss Army Bulldozer of slugging and permalink plugins for Active Record. Lets you create pretty URLs
@@ -55,7 +55,8 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 
 # Declarative dependency management for JavaScript and CSS assets, as well as a powerful preprocessor 
 # pipeline that allows you to write assets in languages like CoffeeScript, Sass and SCSS.
-gem 'sprockets', '2.11.0'
+# The latest version of the Twitter Bootstrap gem has a bug and this is why we include the sprockets gem. 
+gem 'sprockets', '2.11.0' 
 
 #Installing this gem enables two great things. First off, assets are served in production in a more efficient 
 #style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 

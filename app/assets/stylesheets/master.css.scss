@@ -1,0 +1,260 @@
+@import 'normalize';
+
+body {
+  font-family: "Trebuchet MS", Palatino, serif;
+  margin: 0 auto;
+  background-color: #fff;
+  padding:0;
+  width: 100%;
+}
+
+.container-fluid {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.navbar {
+  border-top: 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #e7e7e7;
+}
+
+.clear {clear: both
+}
+
+#mainLogo {
+  font-size: 2.2rem;
+}
+
+#mainLogo a {
+  color: red;
+  text-decoration: none;
+  float: left;
+  letter-spacing: .25em;
+}
+#mainLogo>a>span {
+  color: black;
+}
+#mainLogo a:hover,
+#mainLogo a:hover span {
+    color: #009900;
+    transition: .75s;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    65% {opacity: 1;}
+    70% {opacity: 0;}
+    99% {opacity: 0}
+    100% {opacity: 1;}
+}
+#mainLogo a:hover em {
+  animation-name: blink;
+  animation-duration: 1.35s;
+  animation-iteration-count: infinite;
+}
+.mainNav {
+    float: right;
+    font-size: 1.05rem;
+    text-align: right;
+    letter-spacing: .25em;
+    word-spacing: .1em;
+}
+
+.mainNav {
+    color: black;
+    text-decoration: none;
+    padding: 1em .5em 1em;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: red;
+    transition: 1s;
+}
+/*
+.mainNav:hover {
+    color: red;
+    transition: 1s;
+}
+*/
+.nav li a {
+  display: inline;
+}
+
+#headerBottomBorder {
+  width: 3em auto;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #ececec;
+  margin: 4rem 0 2rem 0;
+  padding-top: 1rem;
+}
+
+#pageTitle {
+  text-align: center;
+  padding: 1em 0 .2em 0;
+  font-size: 1em;
+  letter-spacing: .2em;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 4rem 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+p, ul, ol {
+  margin: 0 0 1.6em 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 1.5em;
+  border: 2px solid #C0C0C0;
+  padding: 1em;
+  margin: .5em 0 2em 0;
+}
+
+textarea {
+  min-height: 20em
+}
+
+input[type="submit"], .button {
+  outline: none;
+  background: transparent;
+  border: 2px solid #C0C0C0;
+  text-align: center;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+input[type="submit"], .button:hover {
+  border: 2px solid #BCE4E2;
+  color: #86c6ab;
+}
+
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center;
+}
+
+.project_button {
+  background: #66c166;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+}
+
+.project_button:hover {
+  background: #4cb74c;
+  transition: .75s;
+}
+
+// ---------- Footer
+
+#pageFooter{
+  margin: .6em 2em 1em;
+}
+
+#pageFooter a {
+  text-decoration: none;
+}
+
+.copyright {
+  color: black;
+  font-size: .8em;
+}
+
+.copyright:hover {
+  color: red;
+  transition: .75s;
+}
+
+.footerNav {
+  float: right;
+  word-spacing: .75em;
+  font-size: 1.1em;
+}
+
+.footerNav i:hover {
+  color: red;
+  transition: .75s;
+  cursor: pointer;
+}
+
+.footerNav i {
+  color: #C0C0C0
+}

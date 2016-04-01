@@ -17,26 +17,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <header role="banner" id="mainHeader">
-    <h1 id="mainLogo">
+  
+  <div id="wrap">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1 id="mainLogo">
+            <a href="welcome/index" title="&gt i see in code &UnderBar;">&gt;<span>I see in code</span><em>_</em></a> 
+          </h1>
+        </div>
 
-      <!-- <%= link_to "How do I drop in the logo and NOT break the styling?", root_path %> -->
-      <a href="welcome/index" title="&gt i see in code &UnderBar;">&gt;<span>I see in code</span><em>_</em></a> 
-      <!--
-      <%= link_to root_path do %>
-        <p>&gt;<span>I see in code</span><em>_</em></p>
-      <% end %>
-      -->
-    </h1>
-    <nav role="navigation" id="mainNav">
-      <%= link_to 'Blog', posts_path %>
-      <%= link_to 'Projects', projects_path %>
-      <%= link_to 'Contact', new_contact_path %>
-      <% if user_signed_in? %>
-        <% link_to "Sign Out", destroy_user_session_path, method: :delete %>
-      <% end %>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" role="navigation" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right pull-right">
+              <li><%= link_to 'Blog', posts_path, class: 'mainNav' %></li>
+              <li><%= link_to 'Projects', projects_path, class: 'mainNav' %></li>
+              <li><%= link_to 'Contact', new_contact_path, class: 'mainNav' %></li>
+                <% if user_signed_in? %>
+                  <% link_to "Sign Out", destroy_user_session_path, class: 'mainNav', method: :delete %>
+                <% end %>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
-  </header>
+  </div>
 
   <!-- <hr id="headerBottomBorder" class="clear"> 
   You might need this in order to avoid the mess at the top from an alert -->
@@ -58,12 +69,12 @@
 <%= yield %>
 
   <footer role="contentinfo" id="pageFooter">
-    <p class="copyright">&copy; 2016 <%= link_to "iseeincode.com", root_path %></p>
-    <nav id="footerNav">
-        <a href="https://www.instagram.com/iseeincode/" title="Follow me on Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://twitter.com/i_see_in_code" title="Follow me on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/bennypaulino" title="GitHub" target="_blank"><i class="fa fa-github-alt"></i></a>
-    </nav>
+    <%= link_to "© 2016 iseeincode.com", root_path, class: "copyright pull-left" %>
+      <nav class="footerNav">
+          <a href="https://www.instagram.com/iseeincode/" title="Follow me on Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/i_see_in_code" title="Follow me on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://github.com/bennypaulino" title="GitHub" target="_blank"><i class="fa fa-github-alt"></i></a>
+      </nav>
   </footer>
 
 </body>
