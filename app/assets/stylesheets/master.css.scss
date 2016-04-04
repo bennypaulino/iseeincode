@@ -37,17 +37,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.2rem;
 }
 
-#mainLogo a {
+#mainLogo {
   color: red;
   text-decoration: none;
   float: left;
   letter-spacing: .25em;
 }
-#mainLogo>a>span {
+#mainLogo>span {
   color: black;
 }
-#mainLogo a:hover,
-#mainLogo a:hover span {
+#mainLogo:hover,
+#mainLogo:hover span {
     color: #009900;
     transition: .75s;
 }
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     99% {opacity: 0}
     100% {opacity: 1;}
 }
-#mainLogo a:hover em {
+#mainLogo:hover em {
   animation-name: blink;
   animation-duration: 1.35s;
   animation-iteration-count: infinite;

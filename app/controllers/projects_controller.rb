@@ -47,7 +47,7 @@ class ProjectsController < ApplicationController
   end
 
   def project_params
-    params.require(:project).permit(:title, :description, :link,:slug) #add ,:slug (to make friendly work)
+    params.require(:project).permit(:title, :description, :image, :link, :slug) #add ,:slug (to make friendly work)
   end
 
 
