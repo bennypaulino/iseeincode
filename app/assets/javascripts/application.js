@@ -15,3 +15,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require redactor-rails
+//= require redactor-rails/plugins

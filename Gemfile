@@ -76,6 +76,10 @@ gem 'carrierwave-aws'
 # by default by encouraging a convention that keeps configuration out of Git.
 gem 'figaro'
 
+# Minimagick helps to manipulate images with minimal use of memory via ImageMagick
+gem 'mini_magick', '~> 4.3.1'
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
