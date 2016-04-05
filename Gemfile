@@ -58,10 +58,6 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 # The latest version of the Twitter Bootstrap gem has a bug and this is why we include the sprockets gem. 
 gem 'sprockets', '2.11.0' 
 
-#Installing this gem enables two great things. First off, assets are served in production in a more efficient 
-#style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 
-#provide useful information in troubleshooting rather than the generic error messages that are usually displayed.
-gem 'rails_12factor', group: :production
 
 # WYSIWYG editor, integrates the Redactor editor (version 10.0.4) with the Rails asset pipeline.
 gem 'redactor-rails'
@@ -78,6 +74,13 @@ gem 'figaro'
 
 # Minimagick helps to manipulate images with minimal use of memory via ImageMagick
 gem 'mini_magick', '~> 4.3.1'
+
+#Installing this gem enables two great things. First off, assets are served in production in a more efficient 
+#style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 
+#provide useful information in troubleshooting rather than the generic error messages that are usually displayed.
+gem 'rails_12factor', group: :production
+
+
 
 
 group :doc do
