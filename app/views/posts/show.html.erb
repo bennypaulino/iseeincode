@@ -6,13 +6,13 @@
     <h1><%= @post.title %></h1>
     <hr>
   </header>
-/* ----------------------------------------------------------------
+
   <%= image_tag @post.image, class: 'img-responsive center-block' %>
 
   <div id="content">
     <%= markdown @post.content %>
   </div>
------------------------------------------------------------------*/
+
   <% if user_signed_in? %>
     <div id="admin_links">
       <%= link_to "Edit post", edit_post_path(@post) %>
