@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
     title_changed?
   end
 
-  mount_uploader :image, ImageUploader
+  # mount_uploader :image, ImageUploader
 end
 
 
