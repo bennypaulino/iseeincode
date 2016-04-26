@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -30,10 +30,10 @@ gem 'jbuilder', '~> 1.2'
 # Sass-powered version of FontAwesome for your Ruby projects and plays nicely with Ruby on Rails, Compass, Sprockets, etc.
 gem 'font-awesome-sass'
 
-# Markdown parsing
+# exposes the pygments syntax highlighter to Ruby
 gem 'pygments.rb', '~> 0.6.0'
 
-# exposes the pygments syntax highlighter to Ruby
+# Markdown parsing, allows you to show Markdown as formatted HTML in your Ruby / Rails app
 gem 'redcarpet', '~>3.2.2'
 
 # friendly_id is the Swiss Army Bulldozer of slugging and permalink plugins for Active Record. Lets you create pretty URLs
@@ -50,10 +50,38 @@ gem 'mail_form', '~> 1.5.1'
 # User authentication for Rails with Warden
 gem 'devise', '~> 3.4.1'
 
+# A Sass-powered version of Bootstrap 3
+gem 'bootstrap-sass', '~> 3.3.5.1'
+
+# Declarative dependency management for JavaScript and CSS assets, as well as a powerful preprocessor 
+# pipeline that allows you to write assets in languages like CoffeeScript, Sass and SCSS.
+# The latest version of the Twitter Bootstrap gem has a bug and this is why we include the sprockets gem. 
+gem 'sprockets', '2.11.0' 
+
+
+# WYSIWYG editor, integrates the Redactor editor (version 10.0.4) with the Rails asset pipeline.
+gem 'redactor-rails'
+
+# Provides a simple and extremely flexible way to upload files from Ruby applications.
+gem 'carrierwave'
+
+# Helps to integrate Amazon AWS S3 storage
+gem 'carrierwave-aws'
+
+#Configuration values often include sensitive information. Figaro strives to be secure 
+# by default by encouraging a convention that keeps configuration out of Git.
+gem 'figaro'
+
+# Minimagick helps to manipulate images with minimal use of memory via ImageMagick
+gem 'mini_magick', '~> 4.3.1'
+
 #Installing this gem enables two great things. First off, assets are served in production in a more efficient 
 #style which speeds up your page load times. Secondly, this gem allows you to see errors in your Heroku Logs that 
 #provide useful information in troubleshooting rather than the generic error messages that are usually displayed.
 gem 'rails_12factor', group: :production
+
+
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
