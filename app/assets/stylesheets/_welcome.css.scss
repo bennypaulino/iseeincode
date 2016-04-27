@@ -9,13 +9,12 @@
 #welcomeImg p {
   font-size: 1.5em;
   letter-spacing: .25em;
-  margin-top: -10rem;
-  margin-bottom: .1rem;
-  padding: 0 3rem;
+  margin: -10rem 10rem .1rem auto;
+  padding: 1rem 3rem;
   text-align: center;
   color: #fff;
   box-sizing: border-box;
-  position: relative;
+  position: absolute;
 }
 #hello {
   border: 1px solid rgba(255, 255, 255, 0.6);
