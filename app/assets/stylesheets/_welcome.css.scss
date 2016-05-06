@@ -21,3 +21,23 @@
   border-radius: 30px 5px 30px 5px;
   line-height: 1.5em;
 }
+
+$welcomeImg-padding-mobile320: 14rem 2rem; /* handles hero image text for an iphone5 */
+@media (max-width: 320px) {
+  #welcomeImg {
+    padding: $welcomeImg-padding-mobile320;
+  }
+  #welcomeImg p {
+    margin: -12rem 10rem .1rem auto;
+  }
+}
+
+$welcomeImg-padding-mobile435: 17rem 2rem; /* handles hero image text for an iphone5 */
+@media (min-width: 321px) and (max-width: 435px) {
+  #welcomeImg {
+    padding: $welcomeImg-padding-mobile435;
+  }
+  #welcomeImg p {
+    margin: -11rem 2rem .1rem auto;
+  }
+}
