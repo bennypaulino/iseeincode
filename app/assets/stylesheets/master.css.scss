@@ -220,6 +220,11 @@ input[type="submit"], .button {
   color: black;
   text-decoration: none;
   padding: 1em 2em;
+  &:hover {
+    border: 2px solid #20C7BF;
+    transition: .6s;
+    color: #20C7BF;
+  }
 }
 
 input[type="submit"], .button:hover {
